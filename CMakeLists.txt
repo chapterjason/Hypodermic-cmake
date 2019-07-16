@@ -1,0 +1,106 @@
+cmake_minimum_required(VERSION 3.14)
+project(Hypodermic)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_library(Hypodermic
+        Base.h
+        Base.cpp
+        src/DependencyFactories.hpp
+        src/ResolutionException.hpp
+        src/RegistrationDescriptorInfo.hpp
+        src/ResolutionInfo.hpp
+        src/IRegistrationActivator.hpp
+        src/ActivatedRegistrationInfo.hpp
+        src/PointerAlignment.hpp
+        src/ConstructorTypologyDeducer.hpp
+        src/Container.hpp
+        src/InstanceAlreadyActivatingException.hpp
+        src/IRegistration.hpp
+        src/IRegistrationDescriptor.hpp
+        src/Named.hpp
+        src/DependencyFactory.hpp
+        src/ResolutionContext.hpp
+        src/AsSelf.hpp
+        src/UseIfNone.hpp
+        src/ContainerInstanceRegistrationActivator.hpp
+        src/ComponentContext.hpp
+        src/RegistrationBuilder.hpp
+        src/ITypeAlias.hpp
+        src/AutowireableConstructorRegistrationDescriptor.hpp
+        src/Log.hpp
+        src/ContainerInstanceRegistration.hpp
+        src/ProvidedInstanceRegistration.hpp
+        src/Pragmas.hpp
+        src/MetaContains.hpp
+        src/InstanceFactory.hpp
+        src/InstanceRegistrationTags.hpp
+        src/FactoryWrapper.hpp
+        src/RegistrationException.hpp
+        src/ILoggerSink.hpp
+        src/DependencyActivationException.hpp
+        src/MetaMap.hpp
+        src/Registration.hpp
+        src/Config.hpp
+        src/NamedTypeAlias.hpp
+        src/TypeAliases.hpp
+        src/ProvidedInstanceRegistrationDescriptor.hpp
+        src/ActivationResult.hpp
+        src/AutowireableConstructor.hpp
+        src/ActivationRegistry.hpp
+        src/MetaIdentity.hpp
+        src/PersistentInstanceRegistration.hpp
+        src/MetaInsert.hpp
+        src/MetaPair.hpp
+        src/RegistrationDescriptorBuilder.hpp
+        src/ResolutionContainer.hpp
+        src/IResolutionContainer.hpp
+        src/IRegistrationRegistry.hpp
+        src/NoopLoggerSink.hpp
+        src/ProvidedInstanceRegistrationActivator.hpp
+        src/TypeAlias.hpp
+        src/RegistrationActivator.hpp
+        src/With.hpp
+        src/IRuntimeRegistrationBuilder.hpp
+        src/TypeAliasKey.hpp
+        src/IsComplete.hpp
+        src/As.hpp
+        src/AnyArgument.hpp
+        src/MetaForEach.hpp
+        src/NestedRegistrationScope.hpp
+        src/ActivationHandlers.hpp
+        src/CircularDependencyException.hpp
+        src/IResolutionContext.hpp
+        src/Logger.hpp
+        src/InstanceLifetime.hpp
+        src/ArgumentPack.hpp
+        src/IntegerSequence.hpp
+        src/ExceptionBase.hpp
+        src/IsSupportedArgument.hpp
+        src/ConsoleLoggerSink.hpp
+        src/ProvidedInstanceFactoryRegistrationDescriptor.hpp
+        src/Behavior.hpp
+        src/Hypodermic.hpp
+        src/ActivationHandler.hpp
+        src/IRegistrationScope.hpp
+        src/RuntimeRegistrationBuilder.hpp
+        src/DependencyFactoryTag.hpp
+        src/ConstructorDescriptor.hpp
+        src/RegistrationScope.hpp
+        src/ProvidedDependencyTag.hpp
+        src/TypeInfo.hpp
+        src/SingleInstance.hpp
+        src/RegistrationDescriptorBase.hpp
+        src/LogLevel.hpp
+        src/ActivationException.hpp
+        src/ArgumentResolver.hpp
+        src/RegistrationDescriptorInfoToString.hpp
+        src/OnActivated.hpp
+        src/RegistrationContext.hpp
+        src/ProvidedInstanceDependencyTag.hpp
+        src/ContainerBuilder.hpp
+)
+
+
+
+#set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE CXX)

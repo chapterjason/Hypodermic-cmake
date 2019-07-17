@@ -1,3 +1,3 @@
 [submodule "lib"]
 	path = lib
-	url = git@github.com:ybainier/Hypodermic.git
+	url = https://github.com/chapterjason/Hypodermic.git
